@@ -1,4 +1,4 @@
-#!/home/phonphey/Magnezi/bin/python
+#!/home/oksovskii/Magnezi/bin/python
 
 import sys
 import getopt
