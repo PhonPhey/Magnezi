@@ -3,9 +3,19 @@
 %html
     %head
         %meta{:charset=>"utf-8"}
-        %link{:href => "https://rawgit.com/Download/polymer-cdn/master/lib/paper-input/paper-input.html", :rel => "import"}
+        %link{:href => "https://rawgit.com/Download/polymer-cdn/master/lib/paper-item/paper-item.html", :rel => "import"}
+        %link{:href => "https://rawgit.com/Download/polymer-cdn/master/lib/paper-icon-button/paper-icon-button.html", :rel => "import"}
+        %link{:href => "https://rawgit.com/Download/polymer-cdn/master/lib/paper-menu-button/paper-menu-button.html", :rel => "import"}
+        %link{:href => "/css/main.css", :rel => "stylesheet", :type => "text/css"}
         %title
             Magnezi - {{title}}
 
     %body
-        %paper-input
+        %paper-menu-button
+            %paper-icon-button.dropdown-trigger{:icon => "menu"}
+            %paper-menu.dropdown-content
+                %paper-item Share
+                %paper-item Settings
+                %paper-item Help
+
+

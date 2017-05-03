@@ -2,12 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="https://rawgit.com/Download/polymer-cdn/master/lib/paper-input/paper-input.html" rel="import">
+    <link href="https://rawgit.com/Download/polymer-cdn/master/lib/paper-item/paper-item.html" rel="import">
+    <link href="https://rawgit.com/Download/polymer-cdn/master/lib/paper-icon-button/paper-icon-button.html" rel="import">
+    <link href="https://rawgit.com/Download/polymer-cdn/master/lib/paper-menu-button/paper-menu-button.html" rel="import">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
     <title>
       Magnezi - {{title}}
     </title>
   </head>
   <body>
-    <paper-input></paper-input>
+    <paper-menu-button>
+      <paper-icon-button class="dropdown-trigger" icon="menu"></paper-icon-button>
+      <paper-menu class="dropdown-content">
+        <paper-item>Share</paper-item>
+        <paper-item>Settings</paper-item>
+        <paper-item>Help</paper-item>
+      </paper-menu>
+    </paper-menu-button>
   </body>
 </html>
